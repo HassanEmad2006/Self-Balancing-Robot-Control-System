@@ -6,25 +6,26 @@ This project combines **control theory, dynamic system modeling, sensor fusion, 
 
 ---
 
-## 📸 Project Overview
+## 📸 Results Gallery
 
 ### Hardware Implementation
 
 <p align="center">
-  <img src="images/robot-construction.jpg" width="750">
+  <img src="robot-construction.png" width="850">
 </p>
 
 ### MATLAB Pole-Zero Analysis
 
 <p align="center">
-  <img src="images/pole-zero-map.png" width="750">
+  <img src="pole-zero-map.png" width="850">
 </p>
 
 ### System Response Analysis
 
 <p align="center">
-  <img src="images/system-response.png" width="750">
+  <img src="system-response.png" width="850">
 </p>
+
 
 ---
 
