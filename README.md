@@ -2,7 +2,7 @@
 
 A two-wheeled self-balancing robot designed and implemented as part of **NANENG 212 – Applied Digital Control** at **Zewail City of Science and Technology**.
 
-The project combines **control theory, system modeling, sensor fusion, embedded systems, and real-time feedback control** to stabilize an inherently unstable inverted pendulum system.
+This project combines **control theory, dynamic system modeling, sensor fusion, embedded systems, and real-time feedback control** to stabilize an inherently unstable inverted pendulum system. The robot continuously measures its orientation and applies corrective motor actions through a PID controller to maintain an upright position.
 
 ---
 
@@ -10,43 +10,55 @@ The project combines **control theory, system modeling, sensor fusion, embedded 
 
 ### Hardware Implementation
 
-![Robot Construction](robot.jpg)
+<p align="center">
+  <img src="images/robot-construction.jpg" width="750">
+</p>
 
 ### MATLAB Pole-Zero Analysis
 
-![Pole Zero Map](pole-zero.png)
+<p align="center">
+  <img src="images/pole-zero-map.png" width="750">
+</p>
 
-### System Response
+### System Response Analysis
 
-![Response Analysis](response.png)
+<p align="center">
+  <img src="images/system-response.png" width="750">
+</p>
 
 ---
 
 ## 🎯 Project Objective
 
-Design and implement a self-balancing robot capable of maintaining an upright position using:
+The objective of this project is to design and implement a self-balancing robot capable of maintaining vertical stability using closed-loop feedback control.
+
+The system integrates:
 
 - PID Control
-- IMU Sensor Fusion
-- Real-Time Feedback
+- IMU-Based Angle Measurement
+- Sensor Fusion Techniques
 - PWM Motor Control
 - Dynamic System Modeling
+- Real-Time Feedback Correction
 
-The robot continuously measures its tilt angle, calculates the balance error, and adjusts motor speed to maintain stability.
+The robot continuously measures its tilt angle, computes the balancing error, and adjusts motor speed accordingly to maintain equilibrium.
 
 ---
 
 ## 🧠 Engineering Concepts
 
+This project applies several important concepts in control engineering:
+
 - Inverted Pendulum Dynamics
-- PID Control Design
+- PID Controller Design
 - State-Space Modeling
-- Pole-Zero Analysis
 - Stability Analysis
-- Sensor Fusion
+- Pole-Zero Analysis
 - Feedback Control Systems
+- Sensor Fusion
 - DC Motor Modeling
-- MATLAB Simulation
+- Embedded Control Systems
+- Real-Time System Response
 
 ---
 
@@ -69,31 +81,119 @@ IMU Feedback
     ↺
 ```
 
+The robot operates as a closed-loop control system where the measured tilt angle is continuously fed back to the controller for real-time correction.
+
+---
+
+## 📐 Mathematical Modeling
+
+The self-balancing robot is modeled as a two-wheeled inverted pendulum.
+
+The mathematical framework includes:
+
+- DC Motor Modeling
+- Newtonian Dynamics
+- State-Space Representation
+- Small-Angle Approximation
+- Feedback Linearization
+
+The complete model describes the relationship between motor torque, wheel motion, chassis angle, and external disturbances.
+
+---
+
+## 🔄 Control Strategy
+
+The balancing algorithm is based on a PID controller.
+
+### Proportional (P)
+
+Responds to the current balancing error.
+
+- Improves response speed
+- Reduces immediate deviation
+
+### Integral (I)
+
+Accumulates previous errors.
+
+- Eliminates steady-state error
+- Compensates for system bias
+
+### Derivative (D)
+
+Predicts future behavior from the error rate.
+
+- Reduces oscillations
+- Improves overall stability
+
+The controller output is converted into PWM signals that drive the motors and maintain balance.
+
+---
+
+## 📊 System Response
+
+The robot continuously performs the following cycle:
+
+1. Read IMU sensor data.
+2. Estimate robot angle using sensor fusion.
+3. Calculate balancing error.
+4. Compute PID control action.
+5. Generate motor control signals.
+6. Apply correction through DC motors.
+7. Repeat the process in real time.
+
+This feedback loop enables the robot to recover from disturbances and maintain upright stability.
+
 ---
 
 ## 🛠 Tools & Technologies
 
+### Software
+
 - MATLAB
 - Control System Toolbox
-- PID Controller Design
-- IMU Sensors
+- State-Space Modeling
+- PID Tuning Tools
+
+### Hardware
+
+- IMU Sensor
 - DC Motors
-- PWM Control
-- Embedded Hardware
+- Motor Driver
+- Embedded Controller
+- Battery Power System
+
+### Engineering Topics
+
+- Control Systems
+- Embedded Systems
+- Sensor Fusion
+- Dynamic Modeling
+- Mechatronics
 
 ---
 
-## 📊 Key Outcomes
+## 📈 Key Outcomes
 
 - Developed a mathematical model of a self-balancing robot.
 - Implemented PID-based stabilization.
-- Performed stability analysis using pole-zero techniques.
-- Analyzed system response and controller performance.
-- Successfully demonstrated real-time balancing behavior.
+- Performed pole-zero and stability analysis.
+- Evaluated system response characteristics.
+- Applied sensor fusion for angle estimation.
+- Integrated hardware and software components into a complete control system.
+- Demonstrated successful real-time balancing operation.
 
 ---
 
-## 📂 Repository Contents
+## 🎥 Demonstration
+
+A video demonstration of the working system is available below:
+
+🔗 https://drive.google.com/file/d/17sNFEkE1AbCxhY8EV_Mhj1L5gyV5NEQX/view
+
+---
+
+## 📂 Repository Structure
 
 ```text
 Self-Balancing-Robot/
@@ -101,21 +201,43 @@ Self-Balancing-Robot/
 ├── README.md
 ├── Report.pdf
 ├── MATLAB_Model.slx
-├── robot.jpg
-├── pole-zero.png
-└── response.png
+│
+├── images/
+│   ├── robot-construction.jpg
+│   ├── pole-zero-map.png
+│   └── system-response.png
+│
+└── Additional_Files/
 ```
 
 ---
 
 ## 🎓 Course Information
 
-**Course:** NANENG 212 – Applied Digital Control  
-**University:** Zewail City of Science and Technology  
-**Semester:** Spring 2026
+| Item | Description |
+|--------|------------|
+| Course | NANENG 212 – Applied Digital Control |
+| University | Zewail City of Science and Technology |
+| Semester | Spring 2026 |
+| Project Type | Undergraduate Team Project |
+| Repository Purpose | Engineering Portfolio Documentation |
+
+---
+
+## 🏷 Keywords
+
+Control Systems • PID Control • Self-Balancing Robot • MATLAB • State-Space Modeling • Sensor Fusion • Inverted Pendulum • Embedded Systems • Dynamic Systems • Mechatronics • Feedback Control
 
 ---
 
 ## 👥 Attribution
 
-This repository documents a collaborative undergraduate academic project. The GitHub repository is maintained individually as part of a professional engineering portfolio.
+This repository documents a collaborative undergraduate academic project completed as part of **NANENG 212 – Applied Digital Control**.
+
+The original design, implementation, and report were prepared by the project team. This repository is maintained individually as part of a professional engineering portfolio and serves to document the project's methodology, implementation, and results.
+
+---
+
+## 📄 License
+
+No license. Educational and portfolio use only.
