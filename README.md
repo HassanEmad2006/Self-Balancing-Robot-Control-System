@@ -1,5 +1,8 @@
 # 🤖 Self-Balancing Robot Using PID Control
 
+![Arduino](https://img.shields.io/badge/-Arduino-00979D?style=flat&logo=Arduino&logoColor=white)
+![MATLAB](https://img.shields.io/badge/-MATLAB-0076A8?style=flat&logo=Mathworks&logoColor=white)
+
 A two-wheeled self-balancing robot designed and implemented as part of **NANENG 212 – Applied Digital Control** at **Zewail City of Science and Technology**.
 
 This project combines **control theory, dynamic system modeling, sensor fusion, embedded systems, and real-time feedback control** to stabilize an inherently unstable inverted pendulum system. The robot continuously measures its orientation and applies corrective motor actions through a PID controller to maintain an upright position.
@@ -155,13 +158,14 @@ This feedback loop enables the robot to recover from disturbances and maintain u
 - Control System Toolbox
 - State-Space Modeling
 - PID Tuning Tools
+- Arduino IDE (C/C++)
 
 ### Hardware
 
 - IMU Sensor
 - DC Motors
 - Motor Driver
-- Embedded Controller
+- Arduino-Based Embedded Controller
 - Battery Power System
 
 ### Engineering Topics
@@ -202,6 +206,7 @@ Self-Balancing-Robot/
 ├── README.md
 ├── Report.pdf
 ├── MATLAB_Model.slx
+├── Arduino_Firmware.ino
 │
 ├── images/
 │   ├── robot-construction.jpg
@@ -227,7 +232,7 @@ Self-Balancing-Robot/
 
 ## 🏷 Keywords
 
-Control Systems • PID Control • Self-Balancing Robot • MATLAB • State-Space Modeling • Sensor Fusion • Inverted Pendulum • Embedded Systems • Dynamic Systems • Mechatronics • Feedback Control
+Control Systems • PID Control • Self-Balancing Robot • MATLAB • Arduino • State-Space Modeling • Sensor Fusion • Inverted Pendulum • Embedded Systems • Dynamic Systems • Mechatronics • Feedback Control
 
 ---
 
